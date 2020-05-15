@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:meet_up_tut/src/widgets/bottom_navigation.dart';
 
 class CounterHomeScreen extends StatefulWidget {
   final String title;
   CounterHomeScreen({String title}) : title = title;
   @override
-  CounterHomeScreenState createState() {
-    return CounterHomeScreenState();
-  }
+  CounterHomeScreenState createState() => CounterHomeScreenState();
 }
 
 class CounterHomeScreenState extends State<CounterHomeScreen> {
@@ -46,6 +45,7 @@ class CounterHomeScreenState extends State<CounterHomeScreen> {
         child: Icon(Icons.add),
         onPressed: _increment,
       ),
+      bottomNavigationBar: BottomNavigation(),
     );
   }
 }
